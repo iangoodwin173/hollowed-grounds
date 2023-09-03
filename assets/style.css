@@ -576,8 +576,6 @@
       justify-content: center;
       opacity: 0; /* Start with 0% opacity */
       animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
-      overflow: hidden;
-      background-repeat: none;
     }
   
     @keyframes fadeIn {
@@ -961,6 +959,10 @@
     .speech-bubble {
       opacity: 0; /* Start with 0% opacity */
       animation: fadeIn 4s ease-in-out forwards; /* Apply the animation */
+    }
+
+    .speech-bubble img {
+        display: none;
     }
   
     .bubble-text {
