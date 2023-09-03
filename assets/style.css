@@ -5,7 +5,6 @@
   }
 
 body {
-    /* background-color: black; */
     background-image: url('./images/graveyard.png');
     background-size: cover;
     text-align: center;
@@ -36,10 +35,10 @@ h1 {
     margin-bottom: 1px;
     margin-top: 0px;
     text-shadow: 
-        -1px -1px 0 #ffffff, /* Top-left shadow (adjust offsets and color) */
-         1px -1px 0 #ffffff, /* Top-right shadow (adjust offsets and color) */
-        -1px  1px 0 #ffffff, /* Bottom-left shadow (adjust offsets and color) */
-         1px  1px 0 #ffffff; /* Bottom-right shadow (adjust offsets and color) */
+        -1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-left shadow (adjust offsets and color) */
+         1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-right shadow (adjust offsets and color) */
+        -1px  1px 0 rgba(169, 169, 169, 0.8), /* Bottom-left shadow (adjust offsets and color) */
+         1px  1px 0 rgba(169, 169, 169, 0.8); /* Bottom-right shadow (adjust offsets and color) */
 }
 
 h3 {
@@ -50,10 +49,10 @@ h3 {
     font-size: 30px;
     margin-bottom: 25px;
     text-shadow: 
-        -1px -1px 0 #ffffff, /* Top-left shadow (adjust offsets and color) */
-         1px -1px 0 #ffffff, /* Top-right shadow (adjust offsets and color) */
-        -1px  1px 0 #ffffff, /* Bottom-left shadow (adjust offsets and color) */
-         1px  1px 0 #ffffff; /* Bottom-right shadow (adjust offsets and color) */
+        -1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-left shadow (adjust offsets and color) */
+         1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-right shadow (adjust offsets and color) */
+        -1px  1px 0 rgba(169, 169, 169, 0.8), /* Bottom-left shadow (adjust offsets and color) */
+         1px  1px 0 rgba(169, 169, 169, 0.8); /* Bottom-right shadow (adjust offsets and color) */
 }
 
 #spacer-dot {
@@ -67,6 +66,10 @@ h3 {
 
 }
 
+a {
+    width: 2em;
+}
+
 .enter-graveyard {
     display: flex;
     justify-content: center;
@@ -74,6 +77,21 @@ h3 {
 }
 
 #enter-button {
+    font-family: 'SlimeFont';
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: darkslateblue;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+    
+}
+
+#enter-button-anchor {
     font-family: 'SlimeFont';
     width: 165px;
     height: 62px;
@@ -109,7 +127,7 @@ h3 {
     transition: 0.5s;
 }
 
-#youtube, #twitch, #twitter, #tiktok {
+#youtube, #twitch, #facebook, #tiktok {
     font-size: 2em; /* Increase the font size for larger icons */
     background-color: rgba(255, 255, 255, 0.2); /* Smoky-white background */
     color: #0072ff; /* Set the icon color to neon blue */
@@ -151,8 +169,127 @@ h3 {
 
 
 
+header {
+    background-color: transparent;
+    color: darkslateblue;
+    padding: 10px 0;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-left shadow (adjust offsets and color) */
+         1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-right shadow (adjust offsets and color) */
+        -1px  1px 0 rgba(169, 169, 169, 0.8), /* Bottom-left shadow (adjust offsets and color) */
+         1px  1px 0 rgba(169, 169, 169, 0.8); /* Bottom-right shadow (adjust offsets and color) */
+}
+
+.navbar {
+    font-family: 'SlimeFont';
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 20px;
+    color: darkslateblue;
+}
+
+.logo {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: darkslateblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-button-show {
+    display: inline;
+    background: none;
+    border: none;
+    color: darkslateblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-button-hide {
+    display: none;
+    background: none;
+    border: none;
+    color: darkslateblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: darkslateblue;
+    font-size: 18px;
+    
+    
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
 
 
+#homepage-tagline {
+    font-family: 'SlimeFont';
+    font-size: 100px;
+    font-weight: bold;
+    color: darkslateblue;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    text-shadow: 
+        -1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-left shadow (adjust offsets and color) */
+         1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-right shadow (adjust offsets and color) */
+        -1px  1px 0 rgba(169, 169, 169, 0.8), /* Bottom-left shadow (adjust offsets and color) */
+         1px  1px 0 rgba(169, 169, 169, 0.8); /* Bottom-right shadow (adjust offsets and color) */
+}
 
-
+#homepage-subtext {
+    font-family: 'SlimeFont';
+    font-size: 25px;
+    font-style: italic;
+    color: darkslateblue;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    text-shadow: 
+        -1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-left shadow (adjust offsets and color) */
+         1px -1px 0 rgba(169, 169, 169, 0.8), /* Top-right shadow (adjust offsets and color) */
+        -1px  1px 0 rgba(169, 169, 169, 0.8), /* Bottom-left shadow (adjust offsets and color) */
+         1px  1px 0 rgba(169, 169, 169, 0.8); /* Bottom-right shadow (adjust offsets and color) */
+}
 
