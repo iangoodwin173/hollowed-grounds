@@ -970,9 +970,14 @@
       font-size: 30px;
       opacity: 0; /* Start with 0% opacity */
       animation: fadeIn 4s ease-in-out forwards; /* Apply the animation */
-      color: #100720;
+      color: darkslateblue;
       position: absolute;
-      top: 40px;
+      top: 75px;
+      text-shadow: -1px -1px 0 rgba(169, 169, 169, 0.8),
+        /* Top-left shadow (adjust offsets and color) */ 1px -1px 0 rgba(169, 169, 169, 0.8),
+        /* Top-right shadow (adjust offsets and color) */ -1px 1px 0 rgba(169, 169, 169, 0.8),
+        /* Bottom-left shadow (adjust offsets and color) */ 1px 1px 0
+          rgba(169, 169, 169, 0.8); /* Bottom-right shadow (adjust offsets and color) */
     }
   
     #contact-anchor {
