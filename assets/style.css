@@ -4,11 +4,22 @@
    
   }
 
-.index-body {
+  .index-body {
     background-image: url('./images/graveyard.png');
     background-size: cover;
     text-align: center;
     justify-content: center;
+    opacity: 0; /* Start with 0% opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity */
+    }
+    100% {
+        opacity: 1; /* End with 100% opacity */
+    }
 }
 
 .events-body {
@@ -17,6 +28,18 @@
     
     text-align: center;
     justify-content: center;
+    
+    opacity: 0; /* Start with 0% opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity */
+    }
+    100% {
+        opacity: 1; /* End with 100% opacity */
+    }
 }
 
 .homepage-body {
@@ -25,6 +48,17 @@
     
     text-align: center;
     justify-content: center;
+    opacity: 0; /* Start with 0% opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity */
+    }
+    100% {
+        opacity: 1; /* End with 100% opacity */
+    }
 }
 
 .contact-body {
@@ -33,6 +67,17 @@
    
     text-align: center;
     justify-content: center;
+    opacity: 0; /* Start with 0% opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity */
+    }
+    100% {
+        opacity: 1; /* End with 100% opacity */
+    }
 }
 
 .about-body {
@@ -41,6 +86,17 @@
    
     text-align: center;
     justify-content: center;
+    opacity: 0; /* Start with 0% opacity */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start with 0% opacity */
+    }
+    100% {
+        opacity: 1; /* End with 100% opacity */
+    }
 }
 
 .header {
