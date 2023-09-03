@@ -569,9 +569,8 @@
     }
   
     .contact-body {
-      background-image: url("./images/contact-bg.png");
+      background-image: url("./images/mobile-contact-bg.jpg");
       background-size: cover;
-      background-position: 50%;  
       text-align: center;
       justify-content: center;
       opacity: 0; /* Start with 0% opacity */
@@ -991,7 +990,7 @@
   
     .contact-footer {
       /* width: 100px; */
-      margin-top: 125px;
+      margin-top: 400px;
       /* position: absolute;
       bottom: 90px;
       right: 34%; */

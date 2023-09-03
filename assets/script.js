@@ -6,7 +6,7 @@ function updateContent() {
     if (screenWidth >= 768) {
       pElement.innerHTML = 'Click my speech bubble to <br> contact the undead...';
     } else {
-      pElement.innerHTML = 'Click <a href="https://mail.google.com/mail/?view=cm&fs=1&to=legionofhollowmen@gmail.com" target="_blank" id="contact-anchor">here</a> to contact the undead...';
+      pElement.innerHTML = 'Please switch to desktop view to <br> contact the undead...or manually copy <br> and paste our email here: <br> legionofhollowmen@gmail.com';
     }
   }
   
